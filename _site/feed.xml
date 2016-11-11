@@ -1,153 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-11T15:31:26+08:00</updated><id>http://localhost:4000//</id><title type="html">Moon123</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Moon Jekyll Theme</title><link href="http://localhost:4000/moon-theme%E5%89%AF%E6%9C%AC/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+08:00</published><updated>2016-04-06T00:00:00+08:00</updated><id>http://localhost:4000/moon-theme%E5%89%AF%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/moon-theme%E5%89%AF%E6%9C%AC/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-11T16:22:58+08:00</updated><id>http://localhost:4000//</id><title type="html">鹿</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Mac用户搭建GitHub-Pages(1)</title><link href="http://localhost:4000/firstpost/" rel="alternate" type="text/html" title="Mac用户搭建GitHub-Pages(1)" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/firstpost</id><content type="html" xml:base="http://localhost:4000/firstpost/">&lt;p&gt;一、安装Jekyll
+由来
+最近很多身边的朋友都开始弄起了个人技术博客主页，最近本人也一直有这个想法，在机缘巧合下朋友正好推荐了我配合Jekyll搭建GitHub主页，查了下也确实是时下比较流行的玩法，于是才有了这篇文章，网上Mac下的环境搭建教材大多层次不齐，本文在经过本人实践后整理所得，有不足之处望大家多多指正交流。&lt;/p&gt;
 
-&lt;center&gt;&lt;b&gt;Moon&lt;/b&gt; is a minimal, one column jekyll theme.&lt;/center&gt;
+&lt;p&gt;感谢 Fiona 提供的技术顾问和参考。&lt;/p&gt;
 
-&lt;p&gt;I’m not a developer or designer. And I don’t add footer to show who did this theme. If you like this theme or using it, please give a &lt;strong&gt;star&lt;/strong&gt; for motivation, It makes me happy.&lt;/p&gt;
+&lt;p&gt;本人Mac环境，Mac mini（2012），RMBP（2014），macOS Sierra 10.12.1。&lt;/p&gt;
 
-&lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=TaylanTatli&amp;amp;repo=Moon&amp;amp;type=star&amp;amp;count=true&amp;amp;size=large&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;160px&quot; height=&quot;30px&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;1、安装ruby
+（0）由于ruby安装会用到读写系统的/usr/bin下的文件权限，用于10.11以后MacOS已强制关闭该文件夹的读写权限，所以我们要先打开该权限：&lt;/p&gt;
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Fork the &lt;a href=&quot;https://github.com/TaylanTatli/Moon/fork&quot;&gt;Moon repo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/li&gt;
-  &lt;li&gt;Remove sample posts from &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder and add yours.&lt;/li&gt;
-  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt; file in &lt;code class=&quot;highlighter-rouge&quot;&gt;about&lt;/code&gt; folder.&lt;/li&gt;
-  &lt;li&gt;Change repo name to &lt;code class=&quot;highlighter-rouge&quot;&gt;YourUserName.github.io&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;点击重启，听见启动声按住option键，选择恢复（Recovery）模式，点击菜单栏中实用工具打开命令行（Terminal），输入如下：&lt;/p&gt;
 
-&lt;p&gt;That’s all.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;csrutil disable&lt;/p&gt;
+&lt;p&gt;重启即可。如果要恢复默认，那么：&lt;/p&gt;
 
-&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;/h2&gt;
+&lt;p class=&quot;notice&quot;&gt;csrutil enable&lt;/p&gt;
 
-&lt;figure class=&quot;third&quot;&gt;
-    
-    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;figcaption&gt;Screenshots of Moon Theme&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;（1）然后重启正常进入系统我们便可以放心安装ruby了，应用程序中打开命令行（Terminal）：&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;curl -L get.rvm.io | bash -s stable
+等待一段时间后就可以成功安装好 RVM,然后启用rvm:&lt;/p&gt;
 
-&lt;figure class=&quot;half&quot;&gt;
-    
-    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;figcaption&gt;Moon Theme on Small Screen Size&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;source ~/.rvm/scripts/rvm
+保险起见测试一下是否安装正常：&lt;/p&gt;
 
-&lt;p&gt;See a &lt;a href=&quot;http://taylantatli.github.io/Moon&quot;&gt;live version of Moon&lt;/a&gt; hosted on GitHub.&lt;/p&gt;
+&lt;p&gt;rvm -v&lt;br /&gt;
+看见版本号则说明安装正常&lt;/p&gt;
 
-&lt;h2 id=&quot;site-setup&quot;&gt;Site Setup&lt;/h2&gt;
-&lt;p&gt;A quick checklist of the files you’ll want to edit to get up and running.&lt;/p&gt;
+&lt;p&gt;TomydeMac-mini:usr tomy$ rvm -v
+rvm 1.27.0 (latest) by Wayne E. Seguin &lt;a href=&quot;mailto:wayneeseguin@gmail.com&quot;&gt;wayneeseguin@gmail.com&lt;/a&gt;, Michal Papis &lt;a href=&quot;mailto:mpapis@gmail.com&quot;&gt;mpapis@gmail.com&lt;/a&gt; [https://rvm.io/]
+（2）用rvm升级Ruby 查看当前ruby版本：&lt;/p&gt;
 
-&lt;h3 id=&quot;site-wide-configuration&quot;&gt;Site Wide Configuration&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; is your friend. Open it up and personalize it. Most variables are self explanatory but here’s an explanation of each if needed:&lt;/p&gt;
+&lt;p&gt;ruby -v&lt;br /&gt;
+得到如下信息：&lt;/p&gt;
 
-&lt;h4 id=&quot;title&quot;&gt;title&lt;/h4&gt;
+&lt;p&gt;ruby 1.8.7&lt;br /&gt;
+显然版本号偏低，再输入：&lt;/p&gt;
 
-&lt;p&gt;The title of your site… shocker!&lt;/p&gt;
+&lt;p&gt;rvm list known 
+在列出的ruby分支表里可以尽量安装最新版本，这里安装2.3.0版本：&lt;/p&gt;
 
-&lt;p&gt;Example &lt;code class=&quot;highlighter-rouge&quot;&gt;title: My Awesome Site&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;rvm install  2.3.0
+然后我们查看系统已安装的ruby:&lt;/p&gt;
 
-&lt;h4 id=&quot;bio&quot;&gt;bio&lt;/h4&gt;
+&lt;p&gt;rvm list
+现设置新版的ruby为默认项：&lt;/p&gt;
 
-&lt;p&gt;The description to show on your homepage.&lt;/p&gt;
+&lt;p&gt;rvm use 2.3.0 –default 
+后移除旧版本：&lt;/p&gt;
 
-&lt;h4 id=&quot;description&quot;&gt;description&lt;/h4&gt;
+&lt;p&gt;rvm remove 1.8.7
+2、安装gem
+Mac系统自带的gem比较老旧我们需要对他进行换新和换源 （1）更换Ruby默认源，先查看现有的源地址：&lt;/p&gt;
 
-&lt;p&gt;The description to use for meta tags and navigation menu.&lt;/p&gt;
+&lt;p&gt;gem sources -l
+删除被强的源：&lt;/p&gt;
 
-&lt;h4 id=&quot;url&quot;&gt;url&lt;/h4&gt;
+&lt;p&gt;gem sources –remove https://rubygems.org/
+添加淘宝源：&lt;/p&gt;
 
-&lt;p&gt;Used to generate absolute urls in &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;feed.xml&lt;/code&gt;, and for generating canonical URLs in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt;. When developing locally either comment this out or use something like &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt; so all assets load properly. &lt;em&gt;Don’t include a trailing &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;gem sources -a https://ruby.taobao.org/
+更新gem：&lt;/p&gt;
 
-&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;gem update –system 
+安装rubygems:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://taylantatli.me/Moon&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:4000&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;//cooldude.github.io&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;gem install rubygems-update
+更新rubygems:&lt;/p&gt;
 
-&lt;h4 id=&quot;readingtime&quot;&gt;reading_time&lt;/h4&gt;
+&lt;p&gt;update_rubygems  &lt;br /&gt;
+3、安装Jekyll
+gem install jekyll  &lt;br /&gt;
+Jekyll依赖的组件会自动下载安装,待安装好后我们测试下Jekyll服务：&lt;/p&gt;
 
-&lt;p&gt;Set true to show reading time for posts. And set &lt;code class=&quot;highlighter-rouge&quot;&gt;words_per_minute&lt;/code&gt;, default is 200.&lt;/p&gt;
+&lt;p&gt;jekyll serve –safe –watch  &lt;br /&gt;
+至此就Mac端准备工作就全部完毕，安装Jekyll的目的是让本机可以在发布到GitHub上前可以在本地测试页面样式等。&lt;/p&gt;
 
-&lt;h4 id=&quot;logo&quot;&gt;logo&lt;/h4&gt;
-&lt;p&gt;Your site’s logo. It will show on homepage and navigation menu. Also used for twitter meta tags.&lt;/p&gt;
-
-&lt;h4 id=&quot;background&quot;&gt;background&lt;/h4&gt;
-&lt;p&gt;Image for background. If you don’t set it, color will be used as a background.&lt;/p&gt;
-
-&lt;h4 id=&quot;google-analytics-and-webmaster-tools&quot;&gt;Google Analytics and Webmaster Tools&lt;/h4&gt;
-
-&lt;p&gt;Google Analytics UA and Webmaster Tool verification tags can be entered in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. For more information on obtaining these meta tags check &lt;a href=&quot;http://support.google.com/webmasters/bin/answer.py?hl=en&amp;amp;answer=35179&quot;&gt;Google Webmaster Tools&lt;/a&gt; and &lt;a href=&quot;https://ssl.bing.com/webmaster/configure/verify/ownership&quot;&gt;Bing Webmaster Tools&lt;/a&gt; support.&lt;/p&gt;
-
-&lt;h4 id=&quot;mathjax&quot;&gt;MathJax&lt;/h4&gt;
-&lt;p&gt;It’s enabled. But if you don’t want to use it. Set it false in  &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;disqus-comments&quot;&gt;Disqus Comments&lt;/h4&gt;
-&lt;p&gt;Set your disqus shortname in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; to use comments.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;navigation-links&quot;&gt;Navigation Links&lt;/h3&gt;
-
-&lt;p&gt;To set what links appear in the top navigation edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/navigation.yml&lt;/code&gt;. Use the following format to set the URL and title for as many links as you’d like. &lt;em&gt;External links will open in a new window.&lt;/em&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Home&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blog&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/blog/&lt;/span&gt;
-
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Projects&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/projects/&lt;/span&gt;
-
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;About&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/about/&lt;/span&gt;
-
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Moon&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://taylantatli.me/Moon&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;layouts-and-content&quot;&gt;Layouts and Content&lt;/h2&gt;
-
-&lt;p&gt;Moon Theme use &lt;a href=&quot;https://github.com/penibelst/jekyll-compress-html&quot;&gt;Jekyll Compress&lt;/a&gt; to compress html output. But it can cause errors if you use “linenos” (line numbers). I suggest don’t use line numbers for codes, because it won’t look good with this theme, also i didn’t give a proper style for them. If you insist to use line numbers, just remove &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: compress&lt;/code&gt; string from layouts. It will disable compressing.&lt;/p&gt;
-
-&lt;h3 id=&quot;feature-image&quot;&gt;Feature Image&lt;/h3&gt;
-
-&lt;p&gt;You can set feature image per post. Just add &lt;code class=&quot;highlighter-rouge&quot;&gt;feature: some link&lt;/code&gt; to your post’s front matter.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;feature: /assets/img/some-image.png
-or
-feaure: http://example.com/some-image.png
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;This also will be used for twitter card:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png&quot; alt=&quot;Moon Twitter Card&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;/h3&gt;
-&lt;p&gt;To show disqus comments for your post add &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; to your post’s front matter.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;questions&quot;&gt;Questions?&lt;/h2&gt;
-
-&lt;p&gt;Found a bug or aren’t quite sure how something works? By all means &lt;a href=&quot;https://github.com/TaylanTatli/Moon/issues/new&quot;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="http://localhost:4000/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+08:00</published><updated>2016-04-06T00:00:00+08:00</updated><id>http://localhost:4000/moon-theme</id><content type="html" xml:base="http://localhost:4000/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;接下来的步骤请参考：Mac用户搭建GitHub-Pages(2)&lt;/p&gt;</content><category term="markdown" /><category term="mathjax" /><category term="example" /><category term="test" /><category term="jekyll" /><summary type="html">MathJax Example for Moon Jekyll Theme.</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="http://localhost:4000/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+08:00</published><updated>2016-04-06T00:00:00+08:00</updated><id>http://localhost:4000/moon-theme</id><content type="html" xml:base="http://localhost:4000/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;b&gt;Moon&lt;/b&gt; is a minimal, one column jekyll theme.&lt;/center&gt;
 
@@ -430,42 +359,7 @@ feaure: http://example.com/some-image.png
 
 &lt;p&gt;Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags and remove &lt;code class=&quot;highlighter-rouge&quot;&gt;allowfullscreen&lt;/code&gt;. Example below:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;315&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><category term="sample" /><category term="post" /><category term="video" /><summary type="html">Custom written post descriptions are the way to go... if you're not lazy.</summary></entry><entry><title type="html">MathJax Example</title><link href="http://localhost:4000/mathjax-example/" rel="alternate" type="text/html" title="MathJax Example" /><published>2015-08-10T00:00:00+08:00</published><updated>2015-08-10T00:00:00+08:00</updated><id>http://localhost:4000/mathjax-example</id><content type="html" xml:base="http://localhost:4000/mathjax-example/">&lt;p&gt;&lt;a href=&quot;http://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt; is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics &lt;code class=&quot;highlighter-rouge&quot;&gt;\[ ... \]&lt;/code&gt;, and the other for inline mathematics &lt;code class=&quot;highlighter-rouge&quot;&gt;\( ... \)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-
-&lt;p&gt;To enable MathJax support be sure Kramdown is your Markdown flavor of choice and MathJax is set to true in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;markdown: kramdown
-mathjax: true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
-\\[ \frac{1}{n^{2}} \\]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Here is an example MathJax inline rendering \( 1/x^{2} \), and here is a block rendering: 
-\[ \frac{1}{n^{2}} \]&lt;/p&gt;
-
-&lt;p&gt;The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become &lt;code class=&quot;highlighter-rouge&quot;&gt;\\[ ... \\]&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;\\( ... \\)&lt;/code&gt; for inline and block maths respectively.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
-  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
-      \vdots &amp; \ddots &amp; \vdots \\
-      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*} %]]&gt;&lt;/script&gt;</content><category term="markdown" /><category term="mathjax" /><category term="example" /><category term="test" /><category term="jekyll" /><summary type="html">MathJax Example for Moon Jekyll Theme.</summary></entry><entry><title type="html">Syntax Highlighting Post</title><link href="http://localhost:4000/code-highlighting-post/" rel="alternate" type="text/html" title="Syntax Highlighting Post" /><published>2013-08-16T00:00:00+08:00</published><updated>2013-08-16T00:00:00+08:00</updated><id>http://localhost:4000/code-highlighting-post</id><content type="html" xml:base="http://localhost:4000/code-highlighting-post/">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;315&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><category term="sample" /><category term="post" /><category term="video" /><summary type="html">Custom written post descriptions are the way to go... if you're not lazy.</summary></entry><entry><title type="html">Syntax Highlighting Post</title><link href="http://localhost:4000/code-highlighting-post/" rel="alternate" type="text/html" title="Syntax Highlighting Post" /><published>2013-08-16T00:00:00+08:00</published><updated>2013-08-16T00:00:00+08:00</updated><id>http://localhost:4000/code-highlighting-post</id><content type="html" xml:base="http://localhost:4000/code-highlighting-post/">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;highlighted-code-blocks&quot;&gt;Highlighted Code Blocks&lt;/h3&gt;
 
