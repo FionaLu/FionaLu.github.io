@@ -26,8 +26,16 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+
+
 # Comments
-disqus_shortname:   taylantatli
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : fionalu
+
+
+
 
 # Social
 # if you don't have any of social below, comment the line.
