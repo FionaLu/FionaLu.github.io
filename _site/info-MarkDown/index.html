@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js">
+<!--<![endif]--> <head> <meta charset="UTF-8"> <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <title>MarkDown使用技巧 – 鹿</title> <meta name="description" content="UI设计师"> <meta name="keywords" content="markdown, mathjax, example, test, jekyll"> <!-- Twitter Cards --> <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="http://localhost:4000/assets/img/logo.png"> <meta name="twitter:title" content="MarkDown使用技巧"> <meta name="twitter:description" content=""> <meta name="twitter:site" content="@fionalu"> <meta name="twitter:creator" content="@fionalu"> <!-- Open Graph --> <meta property="og:locale" content="en_US"> <meta property="og:type" content="article"> <meta property="og:title" content="MarkDown使用技巧"> <meta property="og:description" content=""> <meta property="og:url" content="http://localhost:4000/info-MarkDown/"> <meta property="og:site_name" content="鹿"> <meta property="og:image" content="http://localhost:4000/assets/img/logo.png"> <link rel="canonical" href="http://localhost:4000/info-MarkDown/"> <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="鹿 Feed"> <!-- Handheld --> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- CSS --> <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"> <!-- JS --> <script src="http://localhost:4000/assets/js/modernizr-3.3.1.custom.min.js"></script> <!-- Favicons --> <link rel="apple-touch-icon" href="http://localhost:4000/assets/img/favicons/apple-icon-precomposed.png"> <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/assets/img/favicons/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/assets/img/favicons/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/assets/img/favicons/apple-icon-144x144.png"> <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png"> <link rel="shortcut icon" href="http://localhost:4000/favicon.ico"> <!-- Background Image --> <style type="text/css">body {background-image:url(http://localhost:4000/assets/img/placeholder-big.jpg); background-repeat: no-repeat; background-size: cover; }</style> <!-- Post Feature Image --> </head> <body> <nav id="dl-menu" class="dl-menuwrapper" role="navigation"> <button class="dl-trigger">Open Menu</button> <ul class="dl-menu"> <li><a href="http://localhost:4000/">首页</a></li> <li> <a href="#">关于</a> <ul class="dl-submenu"> <li> <center> <img src="/assets/img/logo2.png" alt="鹿 photo" style="width: 96px; height: 96px; margin-top: 20px; border-radius: 100%; box-shadow: 0 0 4px rgba(0,0,0,.3);"> <h4>鹿</h4> <p>UI设计师</p> </center> <span style="font-size: 10px; font-weight: 100; color: rgba(255,255,255,.8); padding-left: 10px;">Email:  18217123430@163.com</span> <span style="font-size: 10px; font-weight: 100; color: rgba(255,255,255,.8); padding-left: 10px;">QQ:      282588052</span> </li> <li style="margin-top: 30px;"> <center> <a href="http://localhost:4000/about/"><span style="color: rgba(255,255,255,.9);">More</span></a> </center> </li> </ul>
+<!-- /.dl-submenu --> </li> <li> <a href="http://localhost:4000/posts/">博文</a> </li> <li><a href="http://localhost:4000/projects/">作品</a></li> </ul>
+<!-- /.dl-menu --> </nav><!-- /.dl-menuwrapper --> <!-- Header --> <header class="header" role="banner"> <div class="wrapper animated fadeIn"> <div class="content"> <div class="post-title "> <h1>MarkDown使用技巧</h1> <h4>16 Nov 2016</h4> <a class="btn zoombtn" href="http://localhost:4000/posts/"> <i class="fa fa-chevron-left"></i> </a> </div> <h2 id="markdown-">Markdown 的设计哲学</h2> <p>Markdown 的目標是實現「易讀易寫」。 不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。 Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p> <!-- more --> <h2 id="section">标题</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code># 第一级标题 `&lt;h1&gt;` 
+## 第二级标题 `&lt;h2&gt;` 
+###### 第六级标题 `&lt;h6&gt;` 
+</code></pre></div> <p>效果如下：</p> <h1 id="h1">第一级标题 <code class="highlighter-rouge">&lt;h1&gt;</code>
+</h1> <h2 id="h2">第二级标题 <code class="highlighter-rouge">&lt;h2&gt;</code>
+</h2> <h6 id="h6">第六级标题 <code class="highlighter-rouge">&lt;h6&gt;</code>
+</h6> <h2 id="section-1">强调</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>*这些文字会生成`&lt;em&gt;`*
+_这些文字会生成`&lt;u&gt;`_
+
+**这些文字会生成`&lt;strong&gt;`**
+__这些文字会生成`&lt;strong&gt;`__
+</code></pre></div> <p>效果如下：</p> <p><em>这些文字会生成<code class="highlighter-rouge">&lt;em&gt;</code></em> <em>这些文字会生成<code class="highlighter-rouge">&lt;u&gt;</code></em></p> <p><strong>这些文字会生成<code class="highlighter-rouge">&lt;strong&gt;</code></strong> <strong>这些文字会生成<code class="highlighter-rouge">&lt;strong&gt;</code></strong></p> <h2 id="section-2">换行</h2> <p>四个及以上空格加回车。 如果不想打这么多空格，只要回车就为换行</p> <h2 id="section-3">列表</h2> <h3 id="section-4">无序列表</h3> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>* 项目一 无序列表 `* + 空格键`
+* 项目二
+* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+* 项目二的子项目二
+</code></pre></div> <p>效果如下：</p> <ul> <li>项目一 无序列表 <code class="highlighter-rouge">* + 空格键</code>
+</li> <li>项目二</li> <li>项目二的子项目一 无序列表 <code class="highlighter-rouge">TAB + * + 空格键</code>
+</li> <li>项目二的子项目二</li> </ul> <h3 id="section-5">有序列表</h3> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+2. 项目三的子项目二
+</code></pre></div> <p>效果如下：</p> <ol> <li>项目一 有序列表 <code class="highlighter-rouge">数字 + . + 空格键</code>
+</li> <li>项目二</li> <li>项目三</li> <li>项目三的子项目一 有序列表 <code class="highlighter-rouge">TAB + 数字 + . + 空格键</code>
+</li> <li>项目三的子项目二</li> </ol> <h3 id="task-lists">任务列表（Task lists）</h3> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre></div> <p>效果如下：</p> <ul> <li>[ ] 任务一 未做任务 <code class="highlighter-rouge">- + 空格 + [ ]</code>
+</li> <li>[x] 任务二 已做任务 <code class="highlighter-rouge">- + 空格 + [x]</code>
+</li> </ul> <h2 id="section-6">图片</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+</code></pre></div> <p><code class="highlighter-rouge">Control + Shift + I</code> 可插入Markdown语法。 效果如下：</p> <p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"></p> <h2 id="section-7">链接</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+自动生成连接  &lt;http://www.github.com/&gt;
+</code></pre></div> <p><code class="highlighter-rouge">Control + Shift + L</code> 可插入Markdown语法。 如果是 MWeb 的文档库中的文档，拖放或<code class="highlighter-rouge">CMD + Option + I</code> 导入非图片时，会生成连接。 效果如下：</p> <p>Email 连接： <a href="mailto:example@example.com">example@example.com</a> <a href="http://github.com">连接标题Github网站</a> 自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p> <h2 id="section-8">区块引用</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>某某说:
+&gt; 第一行引用
+&gt; 第二行费用文字
+</code></pre></div> <p><code class="highlighter-rouge">CMD + Shift + B</code> 可插入Markdown语法。 效果如下：</p> <p>某某说:</p> <blockquote> <p>第一行引用 第二行费用文字</p> </blockquote> <h2 id="section-9">行内代码</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>像这样即可：`&lt;addr&gt;` `code`
+</code></pre></div> <p><code class="highlighter-rouge">CMD + K</code> 可插入Markdown语法。 效果如下：</p> <p>像这样即可：<code class="highlighter-rouge">&lt;addr&gt;</code> <code class="highlighter-rouge">code</code></p> <h2 id="section-10">多行或者一段代码</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>```js
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:'#foo'})
+    }
+
+}
+```
+</code></pre></div> <p><code class="highlighter-rouge">CMD + Shift + K</code> 可插入Markdown语法。 效果如下：</p> <div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="na">div</span><span class="p">:</span><span class="s1">'#foo'</span><span class="p">})</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div> <h2 id="section-11">顺序图或流程图</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```
+</code></pre></div> <p>效果如下（ <code class="highlighter-rouge">Preferences</code> - <code class="highlighter-rouge">Themes</code> - <code class="highlighter-rouge">Enable sequence &amp; flow chart</code> 才会看到效果 ）：</p>
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+</code></pre>
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+<p>更多请参考：<a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p> <h2 id="section-12">表格</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre></div> <p>效果如下：</p> <table> <thead> <tr> <th>第一格表头</th> <th>第二格表头</th> </tr> </thead> <tbody> <tr> <td>内容单元格 第一列第一格</td> <td>内容单元格第二列第一格</td> </tr> <tr> <td>内容单元格 第一列第二格 多加文字</td> <td>内容单元格第二列第二格</td> </tr> </tbody> </table> <h2 id="section-13">删除线</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>加删除线像这样用： ~~删除这些~~
+</code></pre></div> <p>效果如下：</p> <p>加删除线像这样用： <del>删除这些</del></p> <h2 id="section-14">分隔线</h2> <p>以下三种方式都可以生成分隔线：</p> <div class="highlighter-rouge"><pre class="highlight"><code>***
+
+*****
+
+- - -
+</code></pre></div> <p>效果如下：</p> <hr> <hr> <hr> <h2 id="mathjax">MathJax</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre></div> <p>效果如下（<code class="highlighter-rouge">Preferences</code> - <code class="highlighter-rouge">Themes</code> - <code class="highlighter-rouge">Enable MathJax</code> 才会看到效果）：</p> <p>块级公式： <script type="math/tex">x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}</script></p> <p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p> <p>行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$</p> <h2 id="footnote">脚注（Footnote）</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>这是一个脚注：[^sample_footnote]
+</code></pre></div> <p>效果如下：</p> <p>这是一个脚注：<sup id="fnref:sample_footnote"><a href="#fn:sample_footnote" class="footnote">1</a></sup></p> <h2 id="section-15">注释和阅读更多</h2> <!-- comment --> <!-- more --> <p>Actions-&gt;Insert Read More Comment <em>或者</em> <code class="highlighter-rouge">Command + .</code> <strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p> <h2 id="toc">TOC</h2> <p>Markdown 语法：</p> <div class="highlighter-rouge"><pre class="highlight"><code>[TOC]
+</code></pre></div> <p>效果如下：</p> <p>[TOC]</p> <div class="footnotes"> <ol> <li id="fn:sample_footnote"> <p>这里是脚注信息 <a href="#fnref:sample_footnote" class="reversefootnote">↩</a></p> </li> </ol> </div> <!-- 多说评论框 start --> <div class="ds-thread" data-thread-key="/info-MarkDown" data-title="MarkDown使用技巧" data-url="/info-MarkDown/"></div> <!-- 多说评论框 end --> <!-- 多说公共JS代码 start (一个网页只需插入一次) --> <script type="text/javascript"> var duoshuoQuery = {short_name:"fionalu"}; (function() { var ds = document.createElement('script'); ds.type = 'text/javascript';ds.async = true; ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js'; ds.charset = 'UTF-8'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds); })(); </script> <!-- 多说公共JS代码 end --> <div class="entry-meta"> <!-- <br> <hr> <span class="entry-tags"><a href="http://localhost:4000/tags/#markdown" title="Pages tagged markdown" class="tag"><span class="term">markdown</span></a><a href="http://localhost:4000/tags/#mathjax" title="Pages tagged mathjax" class="tag"><span class="term">mathjax</span></a><a href="http://localhost:4000/tags/#example" title="Pages tagged example" class="tag"><span class="term">example</span></a><a href="http://localhost:4000/tags/#test" title="Pages tagged test" class="tag"><span class="term">test</span></a><a href="http://localhost:4000/tags/#jekyll" title="Pages tagged jekyll" class="tag"><span class="term">jekyll</span></a></span> <span class="social-share"> <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/info-MarkDown/" title="Share on Facebook" class="tag"> <span class="term"><i class="fa fa-facebook-square"></i> Like</span> </a> <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/info-MarkDown/" title="Share on Twitter" class="tag"> <span class="term"><i class="fa fa-twitter-square"></i> Tweet</span> </a> <a href="https://plus.google.com/share?url=http://localhost:4000/info-MarkDown/" title="Share on Google+" class="tag"> <span class="term"><i class="fa fa-google-plus-square"></i> +1</span> </a> </span> <div style="clear:both"></div> --> </div> </div> </div> </header> <!-- JS --> <script src="http://localhost:4000/assets/js/jquery-1.12.0.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.dlmenu.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.magnific-popup.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.fitvid.min.js"></script> <script src="http://localhost:4000/assets/js/scripts.js"></script> <!-- MathJax --> <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> </body> </html>

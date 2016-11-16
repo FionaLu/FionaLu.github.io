@@ -1,9 +1,428 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-15T18:27:08+08:00</updated><id>http://localhost:4000//</id><title type="html">鹿</title><subtitle>UI设计师</subtitle><entry><title type="html">动效</title><link href="http://localhost:4000/motionGraphic/" rel="alternate" type="text/html" title="动效" /><published>2016-11-15T00:00:00+08:00</published><updated>2016-11-15T00:00:00+08:00</updated><id>http://localhost:4000/motionGraphic</id><content type="html" xml:base="http://localhost:4000/motionGraphic/">&lt;figure&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;/assets/img/water.gif&quot; style=&quot;width: 600px;&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-16T15:28:10+08:00</updated><id>http://localhost:4000//</id><title type="html">鹿</title><subtitle>UI设计师</subtitle><entry><title type="html">MarkDown使用技巧</title><link href="http://localhost:4000/info-MarkDown/" rel="alternate" type="text/html" title="MarkDown使用技巧" /><published>2016-11-16T14:30:00+08:00</published><updated>2016-11-16T14:30:00+08:00</updated><id>http://localhost:4000/info-MarkDown</id><content type="html" xml:base="http://localhost:4000/info-MarkDown/">&lt;h2 id=&quot;markdown-&quot;&gt;Markdown 的设计哲学&lt;/h2&gt;
+
+&lt;p&gt;Markdown 的目標是實現「易讀易寫」。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
+Markdown 的語法有個主要的目的：用來作為一種網路內容的&lt;em&gt;寫作&lt;/em&gt;用語言。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;标题&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 第一级标题 `&amp;lt;h1&amp;gt;` 
+## 第二级标题 `&amp;lt;h2&amp;gt;` 
+###### 第六级标题 `&amp;lt;h6&amp;gt;` 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;h1 id=&quot;h1&quot;&gt;第一级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;h2&quot;&gt;第二级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;h6 id=&quot;h6&quot;&gt;第六级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/h6&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;强调&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*这些文字会生成`&amp;lt;em&amp;gt;`*
+_这些文字会生成`&amp;lt;u&amp;gt;`_
+
+**这些文字会生成`&amp;lt;strong&amp;gt;`**
+__这些文字会生成`&amp;lt;strong&amp;gt;`__
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;&lt;/em&gt;
+&lt;em&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;u&amp;gt;&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;换行&lt;/h2&gt;
+
+&lt;p&gt;四个及以上空格加回车。
+如果不想打这么多空格，只要回车就为换行&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;列表&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;无序列表&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 项目一 无序列表 `* + 空格键`
+* 项目二
+* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+* 项目二的子项目二
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目一 无序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;* + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二&lt;/li&gt;
+  &lt;li&gt;项目二的子项目一 无序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB + * + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二的子项目二&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;有序列表&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+2. 项目三的子项目二
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;项目一 有序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;数字 + . + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二&lt;/li&gt;
+  &lt;li&gt;项目三&lt;/li&gt;
+  &lt;li&gt;项目三的子项目一 有序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB + 数字 + . + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目三的子项目二&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;task-lists&quot;&gt;任务列表（Task lists）&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] 任务一 未做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [ ]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;[x] 任务二 已做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [x]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;图片&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Control + Shift + I&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zh.mweb.im/asset/img/set-up-git.gif&quot; alt=&quot;GitHub set up&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;链接&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;email &amp;lt;example@example.com&amp;gt;
+[GitHub](http://github.com)
+自动生成连接  &amp;lt;http://www.github.com/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Control + Shift + L&lt;/code&gt; 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，拖放或&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Option + I&lt;/code&gt; 导入非图片时，会生成连接。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;Email 连接： &lt;a href=&quot;mailto:example@example.com&quot;&gt;example@example.com&lt;/a&gt;
+&lt;a href=&quot;http://github.com&quot;&gt;连接标题Github网站&lt;/a&gt;
+自动生成连接像： &lt;a href=&quot;http://www.github.com/&quot;&gt;http://www.github.com/&lt;/a&gt; 这样&lt;/p&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;区块引用&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;某某说:
+&amp;gt; 第一行引用
+&amp;gt; 第二行费用文字
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Shift + B&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;某某说:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;第一行引用
+第二行费用文字&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;行内代码&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;像这样即可：`&amp;lt;addr&amp;gt;` `code`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + K&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;像这样即可：&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;addr&amp;gt;&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;多行或者一段代码&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```js
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:'#foo'})
+    }
+
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Shift + K&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fancyAlert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;facebox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;section-11&quot;&gt;顺序图或流程图&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sequence
+张三-&amp;gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&amp;gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&amp;gt;start: 开始
+e=&amp;gt;end: 结束
+op=&amp;gt;operation: 我的操作
+cond=&amp;gt;condition: 确认？
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下（ &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Themes&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable sequence &amp;amp; flow chart&lt;/code&gt; 才会看到效果 ）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sequence&quot;&gt;张三-&amp;gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&amp;gt;张三: 忙得吐血，哪有时间写。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-flow&quot;&gt;st=&amp;gt;start: 开始
+e=&amp;gt;end: 结束
+op=&amp;gt;operation: 我的操作
+cond=&amp;gt;condition: 确认？
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更多请参考：&lt;a href=&quot;http://bramp.github.io/js-sequence-diagrams/&quot;&gt;http://bramp.github.io/js-sequence-diagrams/&lt;/a&gt;, &lt;a href=&quot;http://adrai.github.io/flowchart.js/&quot;&gt;http://adrai.github.io/flowchart.js/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-12&quot;&gt;表格&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;第一格表头&lt;/th&gt;
+      &lt;th&gt;第二格表头&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;内容单元格 第一列第一格&lt;/td&gt;
+      &lt;td&gt;内容单元格第二列第一格&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;内容单元格 第一列第二格 多加文字&lt;/td&gt;
+      &lt;td&gt;内容单元格第二列第二格&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;section-13&quot;&gt;删除线&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;加删除线像这样用： ~~删除这些~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;加删除线像这样用： &lt;del&gt;删除这些&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-14&quot;&gt;分隔线&lt;/h2&gt;
+
+&lt;p&gt;以下三种方式都可以生成分隔线：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;***
+
+*****
+
+- - -
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;mathjax&quot;&gt;MathJax&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下（&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Themes&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable MathJax&lt;/code&gt; 才会看到效果）：&lt;/p&gt;
+
+&lt;p&gt;块级公式：
+&lt;script type=&quot;math/tex&quot;&gt;x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]&lt;/p&gt;
+
+&lt;p&gt;行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$&lt;/p&gt;
+
+&lt;h2 id=&quot;footnote&quot;&gt;脚注（Footnote）&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这是一个脚注：[^sample_footnote]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;这是一个脚注：&lt;sup id=&quot;fnref:sample_footnote&quot;&gt;&lt;a href=&quot;#fn:sample_footnote&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-15&quot;&gt;注释和阅读更多&lt;/h2&gt;
+
+&lt;!-- comment --&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Actions-&amp;gt;Insert Read More Comment &lt;em&gt;或者&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command + .&lt;/code&gt;
+&lt;strong&gt;注&lt;/strong&gt; 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。&lt;/p&gt;
+
+&lt;h2 id=&quot;toc&quot;&gt;TOC&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[TOC]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:sample_footnote&quot;&gt;
+      &lt;p&gt;这里是脚注信息 &lt;a href=&quot;#fnref:sample_footnote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="markdown" /><category term="mathjax" /><category term="example" /><category term="test" /><category term="jekyll" /><summary type="html"></summary></entry><entry><title type="html">Mac用户搭建GitHub-Pages(2)</title><link href="http://localhost:4000/setup-blog(2)/" rel="alternate" type="text/html" title="Mac用户搭建GitHub-Pages(2)" /><published>2016-11-16T14:00:00+08:00</published><updated>2016-11-16T14:00:00+08:00</updated><id>http://localhost:4000/setup-blog(2)</id><content type="html" xml:base="http://localhost:4000/setup-blog(2)/">&lt;h2 id=&quot;github&quot;&gt;创建GitHub代码仓库&lt;/h2&gt;
+&lt;p&gt;登陆你的&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;账号，然后&lt;code class=&quot;highlighter-rouge&quot;&gt;Create a repository&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;新建一个&lt;code class=&quot;highlighter-rouge&quot;&gt;repository&lt;/code&gt;时, 命名方式切记！！！一定要为 &lt;code class=&quot;highlighter-rouge&quot;&gt;你的用户名 + github.io&lt;/code&gt;。如我的用户名为 &lt;code class=&quot;highlighter-rouge&quot;&gt;joeyqiang&lt;/code&gt;，所以&lt;code class=&quot;highlighter-rouge&quot;&gt;repository&lt;/code&gt;命名为 &lt;code class=&quot;highlighter-rouge&quot;&gt;joeyqiang.github.io&lt;/code&gt;，如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/2.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上&lt;code class=&quot;highlighter-rouge&quot;&gt;https://desktop.github.com/&lt;/code&gt;下载&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;官方代码托管客户端&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Desktop&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;打开&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Desktop&lt;/code&gt;客户端按提示登陆后克隆自己的项目，如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/4.png&quot; alt=&quot;4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;克隆到本地后是一个空白的文件夹：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/5.png&quot; alt=&quot;5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在空白文件夹内创建一个index.html文件，完成我们&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub-Pages&lt;/code&gt;的第一个页面：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/6.png&quot; alt=&quot;6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在回到&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Desktop&lt;/code&gt;客户端中,点击提交到本地分枝&lt;code class=&quot;highlighter-rouge&quot;&gt;Commit&lt;/code&gt;—&amp;gt;然后点击同步&lt;code class=&quot;highlighter-rouge&quot;&gt;Sync&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;Publish&lt;/code&gt;到&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;远端就好啦，如下图:
+&lt;img src=&quot;/assets/img/jekyllConfig/7.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后回到自己主页 如：&lt;code class=&quot;highlighter-rouge&quot;&gt;https://cs64188.github.io/&lt;/code&gt; 就可以看到效果了！&lt;/p&gt;
+
+&lt;p&gt;===========================基础教程已结束=========================&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll&quot;&gt;附录：Jekyll本地调试和模版推荐&lt;/h2&gt;
+
+&lt;p&gt;上&lt;code class=&quot;highlighter-rouge&quot;&gt;http://jekyllthemes.org/&lt;/code&gt;找一个自己喜欢的模板，本blog主页选了这个&lt;code class=&quot;highlighter-rouge&quot;&gt;http://jekyllthemes.org/themes/Less-Or-More/&lt;/code&gt;主题，简介大方，我喜欢～
+点下载下来以后，先解压缩，放在本地测试一下，打开命令行：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/8.png&quot; alt=&quot;8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;进入到下载的模板下面，执行&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt;：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyllConfig/9.png&quot; alt=&quot;9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本地&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;启动了，地址&lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000/&lt;/code&gt; 在浏览器中输入，就可以看到效果,觉得OK的话把模板文件直接复制到自己的Git文件夹下面（之前自己创建&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;的文件的地方），然后在&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;客户端上提交同步代码，提交完后回自己的主页就有效果啦 ~ （&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;用的就是&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;服务器，所以发布后就可以直接看效果）&lt;/p&gt;
+
+&lt;p&gt;PS*:每个Jekyll的模板都有自己的编写规范，最基础的一定要在模板文件夹下面的_config.yml文件下修改相关配置，例如下图所示的事&lt;code class=&quot;highlighter-rouge&quot;&gt;Less-Or-More&lt;/code&gt;的编写规范：
+&lt;img src=&quot;/assets/img/jekyllConfig/10.png&quot; alt=&quot;10&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;每个模板都有自己的配置介绍，相对都写得比较简单易懂，自己再琢磨琢磨就行。&lt;/p&gt;
+
+&lt;p&gt;原文链接：&lt;a href=&quot;https://cs64188.github.io/2016/11/08/MacConfig-Jrkyll(2)/&quot;&gt;https://cs64188.github.io/2016/11/08/MacConfig-Jrkyll(2)/&lt;/a&gt;&lt;/p&gt;</content><category term="markdown" /><category term="mathjax" /><category term="example" /><category term="test" /><category term="jekyll" /><summary type="html">登陆你的GitHub账号，然后Create a repository. 新建一个repository时, 命名方式切记！！！一定要为 你的用户名 + github.io。如我的用户名为 fionalu，所以repository命名为 fionalu.github.io，如下图...</summary></entry><entry><title type="html">动效</title><link href="http://localhost:4000/motionGraphic/" rel="alternate" type="text/html" title="动效" /><published>2016-11-15T00:00:00+08:00</published><updated>2016-11-15T00:00:00+08:00</updated><id>http://localhost:4000/motionGraphic</id><content type="html" xml:base="http://localhost:4000/motionGraphic/">&lt;figure&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;/assets/img/water.gif&quot; style=&quot;width: 600px;&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;
 &lt;center&gt;
 	&lt;figcaption&gt;水波纹loading动效&lt;/figcaption&gt;
 &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;
-去年有一段时间突然很迷MG动画 看了不少优秀作品和教程 终于自己动手做了一个demo 在此做个展示 还请多多指教&lt;/p&gt;</content><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">一个水波纹loading动效</summary></entry><entry><title type="html">Mac用户搭建GitHub-Pages(1)</title><link href="http://localhost:4000/setup-blog/" rel="alternate" type="text/html" title="Mac用户搭建GitHub-Pages(1)" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/setup-blog</id><content type="html" xml:base="http://localhost:4000/setup-blog/">&lt;h2 id=&quot;section&quot;&gt;前言：&lt;/h2&gt;
+去年有一段时间突然很迷MG动画 看了不少优秀作品和教程 终于自己动手做了一个demo 在此做个展示 还请多多指教&lt;/p&gt;</content><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">一个水波纹loading动效</summary></entry><entry><title type="html">Mac用户搭建GitHub-Pages(1)</title><link href="http://localhost:4000/setup-blog(1)/" rel="alternate" type="text/html" title="Mac用户搭建GitHub-Pages(1)" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/setup-blog(1)</id><content type="html" xml:base="http://localhost:4000/setup-blog(1)/">&lt;h2 id=&quot;section&quot;&gt;前言：&lt;/h2&gt;
 &lt;p&gt;作为一个UI设计师 一直以来都很想要有自己小天地 可以和大家做一些交流 也可以让大家更好的了解自己
 机缘巧合下 从前同事那里了解到了Jekyll+GitHub搭建个人主页的方法 在技术大牛的悉心指导下 终于实现了自己的想法
 接下来就奉上搭建的详细步骤&lt;/p&gt;
