@@ -2,8 +2,8 @@
 layout: post
 title:  "动效"
 date:   2016-11-15
-excerpt: "一个水波纹loading动效"
-img:    "/assets/img/logo.png"
+excerpt: "一个水波纹loading动效123"
+img:  "/assets/img/post01.png"
 project: true
 tag:
 - jekyll 
