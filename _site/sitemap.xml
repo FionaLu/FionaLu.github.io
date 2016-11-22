@@ -34,4 +34,16 @@
 <url>
 <loc>http://localhost:4000/about/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/iconfont/demo_fontclass.html</loc>
+<lastmod>2016-11-17T17:56:02+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/iconfont/demo_symbol.html</loc>
+<lastmod>2016-11-17T17:56:02+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/iconfont/demo_unicode.html</loc>
+<lastmod>2016-11-17T17:56:02+08:00</lastmod>
+</url>
 </urlset>

@@ -14,7 +14,7 @@ comments: true
 ---
 
 
-<figure><a href=""><img src="/assets/img/water.gif" style="width: 600px;"></a></figure>
+<figure><a href=""><img src="/assets/img/water.gif" style="width: 260px;"></a></figure>
 <center>
 	<figcaption>水波纹loading动效</figcaption>
 </center>
