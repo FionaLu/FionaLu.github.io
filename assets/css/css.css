@@ -48,3 +48,35 @@ width: 40px!important; border:1px solid #CED7DE!important; color: #CED7DE!import
   padding-left: 16px; 
   color: #444
 }
+
+
+
+.waterfall{
+width: 770px!important;
+margin: 0 auto;  
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 10px;
+-webkit-column-gap: 10px;
+column-gap: 10px;
+}
+
+.pin {
+width: 236px;
+-moz-page-break-inside: avoid;
+-webkit-column-break-inside: avoid;
+break-inside: avoid;
+background: white;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+box-shadow: 0 1px 3px rgba(0,0,0,.3);
+margin-bottom: 10px;
+}
+
+.pin p {
+  padding:10px 0 10px 16px; 
+  color: #444;
+  margin:0;
+}
+
