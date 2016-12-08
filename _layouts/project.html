@@ -21,40 +21,22 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
-<!--                 <div class=" " style="overflow: hidden; width: 770px; margin:0 auto; overflow: hidden;">
-                    {% for post in site.posts %} 
-                        {% if post.project %}
-                    <div class="wow fadeInDown" data-wow-duration="1.5s" style="width: 236px; float: left; box-shadow:0 1px 3px rgba(0,0,0,.3); margin-left: 10px; margin-top: 10px; margin-bottom: 10px; margin-right: 10px;">
-                        <a href="{{ site.url }}{{ post.url }}"><img src="{{ post.img }}"></a>
-                        <hr style="background-color: #e2e2e2; background-image:none; margin: 0; height: 0.5px;">
-                        <p style="padding-left: 16px; color: #444">{{ post.title }}</p>
-                    </div>
-                      {% endif %}
-                    {% endfor %}
-                </div> -->
-
-               
-                    <div class="waterfall" style="box-shadow: none; padding: 0; margin:0 auto;">
-                        <div class="pin">
-                            <img src="/assets/img/post/01.png">
-                            <p style="margin:0;">11111</p>
-                        </div>                        
-                        <div class="pin">
-                            <img src="/assets/img/post/02.png">
-                            <p>11111</p>
-                        </div>                        
-                        <div class="pin">
-                            <img src="/assets/img/post/03.png">
-                            <p>11111</p>
-                        </div>                        
-                        <div class="pin">
-                            <img src="/assets/img/post/04.png">
-                            <p>11111</p>                            
-                        </div>
-                    </div>
-
-
-
+<ul id="wrap"> 
+    {% for post in site.posts %} 
+        {% if post.project %}
+    <li> 
+        <div class="boxCont">
+            <div class="boxInside">
+                <a href="{{ site.url }}{{ post.url }}"> 
+                    <img src="{{ post.img }}">
+                </a>
+                <p style="height:30px; margin-left: 10px; margin-top: 5px;">{{ post.title }}</p> 
+            </div> 
+        </div>
+    </li> 
+    {% endif %}
+    {% endfor %}
+</ul> 
             </div>
         </div>
     </header>
