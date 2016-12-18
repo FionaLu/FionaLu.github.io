@@ -17,22 +17,21 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
-                    <h4>{{ page.date | date_to_string }}</h4>
-                    {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+<!--                     <h4>{{ page.date | date_to_string }}</h4>
+ -->                    {% if page.project %}
+                    <a class="btnBack" href="{{site.url}}/projects/">
                     {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    <a class="btnBack" href="{{site.url}}/posts/">
                     {% endif %}
-                        <i class="fa fa-chevron-left"></i>
+                        ↼ B A C K
                     </a>
                 </div>
                 {{ content }}
                 <!-- 多说分享 start -->
-                <div class="ds-share" data-thread-key={{page.id}} data-title={page.title}} data-images="此处请替换为分享时显示的图片的链接地址" data-content="此处请替换为分享时显示的内容" data-url={{page.url}}>
+               <!--  <div class="ds-share" data-thread-key={{page.id}} data-title={page.title}} data-images="此处请替换为分享时显示的图片的链接地址" data-content="此处请替换为分享时显示的内容" data-url={{page.url}}>
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">     
-<!--                      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
- -->                    <li>
+                    <li>
                             <a id="icon_share1" class="icon_share" href="javascript:void(0);" data-service="weibo">
                                 <i class="iconfont">&#xe61a;</i>
                             </a>
@@ -51,7 +50,7 @@ layout: compress
                       <div class="ds-share-icons-more">
                       </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- 多说分享 end -->
                 <!-- 多说评论框 start -->
                 <div class="ds-thread" data-thread-key={{page.id}} data-title={{page.title}} data-url={{page.url}}></div>
