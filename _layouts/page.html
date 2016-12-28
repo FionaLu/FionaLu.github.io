@@ -18,12 +18,12 @@ layout: compress
                 <div class="postTitle {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
                 </div>
-                {{ content }}
                 <div class="postTitle" style="margin-top: 20px;">
                     <a class="btnBack" href="{{site.url}}">
                         ↼ B A C K
                     </a>
                 </div>
+                {{ content }}
             </div>
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
@@ -33,6 +33,6 @@ layout: compress
     <!-- MathJax -->
     <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260823669'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260823669%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260823669'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260823669%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> -->
 </body>
 </html>

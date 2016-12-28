@@ -13,7 +13,12 @@ layout: compress
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
+        {% if page.project %}
+        <div class="animated fadeIn">
+        {% else %}
         <div class="wrapper animated fadeIn">
+        {% endif %}
+
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>

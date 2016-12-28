@@ -13,8 +13,7 @@ layout: compress
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
-        <div class="wrapper animated fadeIn" style="position: relative; padding-left: 0;padding-right: 0;">
-            <div class="content" style="padding: 0;">
+            <div class="content" style="padding: 0; margin-top: 40px;">
                 <div class="postTitle">
                     <h1>WEI-QI LU</h1>
                     <img src="/assets/img/selectedProjects.png" style="width: 200px;margin-bottom: 30px;">
@@ -23,28 +22,27 @@ layout: compress
                         H O M E
                     </a>
                 </div>
-<ul id="wrap"> 
-    {% for post in site.posts %} 
-        {% if post.project %}
-    <li> 
-        <div class="boxCont">
-            <div class="boxInside">
-                <a href="{{ site.url }}{{ post.url }}"> 
-                    <img src="{{ post.img }}">
-                </a>
-                <p style="height:30px; text-align: center; margin-top: 5px;">{{ post.title }}</p> 
-            </div> 
-        </div>
-    </li> 
-    {% endif %}
-    {% endfor %}
-</ul> 
+        <ul id="wrap"> 
+        {% for post in site.posts %} 
+            {% if post.project %}
+        <li> 
+            <div class="boxCont">
+                <div class="boxInside">
+                    <a href="{{ site.url }}{{ post.url }}"> 
+                        <img src="{{ post.img }}">
+                    </a>
+                    <p style="height:30px; text-align: center; margin-top: 5px;">{{ post.title }} {{ post.project }}</p> 
+                </div> 
             </div>
-        </div>
+        </li> 
+        {% endif %}
+        {% endfor %}
+        </ul> 
+            </div>
     </header>
     {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+<!--     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260823669'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260823669%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260823669'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260823669%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> -->
 </body>
 </html>
