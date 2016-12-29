@@ -1,3 +1,5 @@
+html a{-webkit-font-smoothing:antialiased;}
+
 body{background-color: white;}
 
 @font-face {
@@ -64,19 +66,63 @@ column-gap: 40px!important;
 
 } 
 
-#wrap li{display:inline-block;list-style:none;} 
-.boxCont{position:relative;/*margin:15px;*/
+#wrap li{
+  display:inline-block;
+  list-style:none;
 } 
+
+.boxCont{
+  position:relative;/*margin:15px;*/
+} 
+
 /*.boxInside{box-shadow: 0 1px 3px rgba(0,0,0,.3);}
-*/.boxInside:hover img{opacity: 0.8;}
+*/.boxInside:hover img{
+  opacity: 0.8;
+}
 
-.ds-login-buttons{display: none;}
+.ds-login-buttons{
+  display: none;
+}
 
-.btnBack{text-decoration: none; font-weight: 400; font-size: 13px;}
-.postTitle{color: #606060; text-align: center; font-size: 10px;}
+.btnBack{
+  text-decoration: none; 
+  font-weight: 400; 
+  font-size: 13px;
+}
 
-.amelie img{width: 320px;box-shadow: 0 1px 3px rgba(0,0,0,.1);}
-.login img{box-shadow: 0 1px 3px rgba(0,0,0,.1);}
-.content{margin-top: 40px;}
-.content h1{font-size: 26px; color: #464646;}
+.postTitle{
+  color: #606060; 
+  text-align: center; 
+  font-size: 10px;
+}
+
+.amelie img{
+  width: 320px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+          }
+
+.login img{
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.content{
+  margin-top: 40px;
+}
+
+.content h1{
+  font-size: 26px; color: #464646;
+}
+
+/*首页样式*/
+.zoombtn{
+  color: #555!important;
+  font-weight: lighter!important;
+  letter-spacing: 2px;
+/*  padding: 0.8em 1.6em;
+*/}
+
+.social-btn, .btn{
+  border:1px solid #dddddd!important;
+}
+
 
